@@ -9,8 +9,8 @@
 		</center>`;
 	}
 	function randomSongPicker() {
-		$songNames = json_decode(file_get_contents(""),true);
-		$songURLs = json_decode(file_get_contents(""),true);
+		$songNames = json_decode(file_get_contents("https://dxcdn.net/random_song_picker/namelinks.json"),true);
+		$songURLs = json_decode(file_get_contents("https://dxcdn.net/random_song_picker/file.json"),true);
 		
 		$randomInt = mt_rand(0,count($songURLs));
 
