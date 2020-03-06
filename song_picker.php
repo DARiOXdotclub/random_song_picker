@@ -18,7 +18,7 @@
 
 		$songChoice = "https://storage.googleapis.com/cdn.jyles.club/pageaudio/".$songURLs[$randomInt];
 
-		$iframe = '<iframe src="'.$songChoice.'" allow="autoplay" id="audio" style="display: none"></iframe><audio id="player" autoplay loop><source src="'.$songChoice.'" type="audio/mp3"></audio>'
+		$iframe = '<iframe src="'.$songChoice.'" allow="autoplay" id="audio" style="display: none"></iframe><audio id="player" autoplay loop><source src="'.$songChoice.'" type="audio/mp3"></audio>';
 		
 		#$iframe = '<iframe frameborder="0" style="position:absolute;top:5px;left:5px;" src="'.$songChoice.'" allow="autoplay" height="0" width="0" id="iframe"></iframe>';
 		$final = $marquee.$iframe;
