@@ -26,7 +26,7 @@
 		
 		//Determines if the user's browser is running chrome,
 		//if not then it loads the audio tag because iframe autoplay does not work with firefox.
-		if (strpos(!$_SERVER['HTTP_USER_AGENT'], 'Chrome') || !strpos($_SERVER['HTTP_USER_AGENT'], 'CriOS')){
+		if (strpos(!$_SERVER['HTTP_USER_AGENT'], 'Chrome') || !strpos($_SERVER['HTTP_USER_AGENT'], 'KHTML') || !strpos($_SERVER['HTTP_USER_AGENT'], 'AppleWebKit')){
 			$final = $marquee.$audiotag.$allowaudiomsg;
 		} else {
 			$final = $marquee.$iframe;
