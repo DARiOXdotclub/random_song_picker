@@ -1,8 +1,4 @@
 <?php
-	function subtitlePicker() {
-		$subtitleResponse = json_decode(file_get_contents(__DIR__."/subtitle.json"));
-		return $subtitleResponse[mt_rand(0,count($subtitleResponse) - 1)];
-	}
 	function marqueeGen($content) {
 		return `
 		<center class="song" >
