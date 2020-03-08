@@ -10,6 +10,7 @@
 
 	function randomSongPicker() {
 		//Varaible Setup
+		$style = '<link href="https://dxcdn.net/random_song_picker/style.css" rel="stylesheet" type="text/css">';
 		$allowaudiomsg = '<div class="allow_noise_msg"><strong>Jukebox Notice;</strong><br>If you are not using Google Chrome allow audio to be played from this website, thanks <3</div>';
 		$songNames = file("https://dxcdn.net/random_song_picker/namelinks.txt");
 		$songURLs = json_decode(file_get_contents("https://dxcdn.net/random_song_picker/file.json"), true);
@@ -27,5 +28,5 @@
 		} else {
 			$final = $marquee.$iframe;
 		}
-		return $final;
+		return $final.$style;
 	}
