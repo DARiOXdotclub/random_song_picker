@@ -17,7 +17,7 @@
 		$randomInt = mt_rand(-1,count($songURLs));
 		$marquee = $songNames[$randomInt];
 		$songChoice = "https://storage.googleapis.com/cdn.jyles.club/pageaudio/".$songURLs[$randomInt];
-		$audiotag = '<audio autoplay loop  controls><source src="'.$songChoice.'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+		$audiotag = '<audio class="random_song_picker_audio" autoplay loop  controls><source src="'.$songChoice.'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
 		$iframe = '<iframe frameborder="0" style="position:absolute;top:5px;left:5px;" src="'.$songChoice.'" allow="autoplay" height="0" width="0" id="iframe"></iframe>';
 
 		
